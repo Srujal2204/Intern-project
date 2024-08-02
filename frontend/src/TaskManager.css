@@ -1,0 +1,52 @@
+/* TaskManager.css */
+
+/* Dark mode styles */
+[data-theme="dark"] {
+    --bg-color: #333;
+    --card-bg-color: #444;
+    --input-background-color: #555;
+    --input-text-color: #fff;
+    --btn-text-color: #fff;
+    --btn-border-color: #666;
+    --text-color: #ddd;
+}
+
+[data-theme="light"] {
+    --bg-color: #f8f9fa;
+    --card-bg-color: #fff;
+    --input-background-color: #fff;
+    --input-text-color: #000;
+    --btn-text-color: #000;
+    --btn-border-color: #ccc;
+    --text-color: #000;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.card, .input-group {
+    background-color: var(--card-bg-color);
+}
+
+input, .form-control {
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
+    border: 1px solid var(--btn-border-color);
+    border-radius: 5px;
+}
+h1{
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
+}
+
+.btn-outline-secondary {
+    color: var(--btn-text-color);
+    border-color: var(--btn-border-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--btn-border-color);
+    color: var(--btn-text-color);
+}
